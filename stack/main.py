@@ -1,0 +1,31 @@
+from stack import Stack
+
+def main():
+    s = Stack(8)
+    s.push('car')
+    s.push(4)
+    s.push('motorcycle')
+    s.push(100)
+    s.push('apple')
+    s.push(69)
+    s.push(99)
+    s.push('cat')
+    s.push('dog')
+    print(s.showAll())
+    print(s.pop())
+    print(s.showAll())
+    print("testing peek: ", s.peek())
+    print(s.pop())
+    print(s.showAll())
+    print("testing peek: ", s.peek())
+    s.pop()
+    s.pop()
+    s.pop()
+    s.pop()
+    s.pop()
+    s.pop()
+    s.pop()
+    print(s.showAll())
+    
+if __name__ == '__main__':
+    main()
